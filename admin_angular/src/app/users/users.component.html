@@ -1,1 +1,22 @@
-<p>users works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Email</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of usersData.data">
+     <tr>
+         <td>{{data._id}}</td>
+         <td>{{data.name}}</td>
+         <td>{{data.email}}</td>
+         <td>{{data.designation}}</td>
+
+         <td><button>Edit</button>&nbsp; <button>Delete</button></td>
+
+     </tr>
+    </tbody>
+  </table>
